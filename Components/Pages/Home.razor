@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<PageTitle>Apollo Manillas</PageTitle>
+
+<h1>Hola Anderson 🚀</h1>
+
+<p>Mi primera aplicación en Blazor.</p>
+
+<button @onclick="Saludar">
+    Haz clic aquí
+</button>
+
+<p>@mensaje</p>
+
+@code {
+    private string mensaje = "";
+
+    private void Saludar()
+    {
+        mensaje = "Blazor está funcionando correctamente 😎";
+    }
+}
