@@ -1,19 +1,54 @@
 ﻿@page "/counter"
-@rendermode InteractiveServer
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Galería de Manillas</PageTitle>
 
-<h1>Counter</h1>
+<div class="container mt-4">
 
-<p role="status">Current count: @currentCount</p>
+    <h1 class="text-center mb-4">Galería de Manillas</h1>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+    <p class="text-center mb-5">
+        Descubre algunos de nuestros diseños personalizados para eventos,
+        empresas, campañas promocionales y proyectos especiales.
+    </p>
 
-@code {
-    private int currentCount = 0;
+    <div class="row">
 
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/manilla1.jpg" class="card-img-top" alt="Manilla personalizada">
+                <div class="card-body">
+                    <h5 class="card-title">Manilla Corporativa</h5>
+                    <p class="card-text">
+                        Ideal para empresas y campañas promocionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/manilla2.jpg" class="card-img-top" alt="Manilla personalizada">
+                <div class="card-body">
+                    <h5 class="card-title">Manilla para Eventos</h5>
+                    <p class="card-text">
+                        Diseños únicos para conciertos y festivales.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/manilla3.jpg" class="card-img-top" alt="Manilla personalizada">
+                <div class="card-body">
+                    <h5 class="card-title">Manilla Promocional</h5>
+                    <p class="card-text">
+                        Perfecta para fortalecer la identidad de marca.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

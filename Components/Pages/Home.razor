@@ -1,22 +1,86 @@
 ﻿@page "/"
 
-<PageTitle>Apollo Manillas</PageTitle>
+<PageTitle>│Apolo Manillas│</PageTitle>
 
-<h1>Hola Anderson 🚀</h1>
+<div class="container mt-5">
 
-<p>Mi primera aplicación en Blazor.</p>
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Apolo Manillas</h1>
+        <p class="lead">
+            Personalización sin límites.
+        </p>
 
-<button @onclick="Saludar">
-    Haz clic aquí
-</button>
+        <a href="#productos" class="btn btn-primary btn-lg">
+            Ver Productos
+        </a>
+    </div>
 
-<p>@mensaje</p>
+    <section class="mb-5">
+        <h2>Bienvenido a Apolo Manillas</h2>
 
-@code {
-    private string mensaje = "";
+        <p>
+            Diseñamos y fabricamos manillas personalizadas para eventos,
+            empresas, emprendimientos y campañas promocionales.
+        </p>
 
-    private void Saludar()
-    {
-        mensaje = "Blazor está funcionando correctamente 😎";
-    }
-}
+        <p>
+            Nuestro objetivo es ayudarte a representar tu marca, equipo
+            o proyecto mediante productos de alta calidad, diseños
+            exclusivos y acabados profesionales.
+        </p>
+    </section>
+
+    <section class="row text-center mb-5">
+
+        <div class="col-md-4">
+            <h3>🎨 Diseños Personalizados</h3>
+            <p>
+                Creamos manillas únicas adaptadas a tus necesidades.
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <h3>⭐ Calidad Garantizada</h3>
+            <p>
+                Materiales resistentes y acabados profesionales.
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <h3>🚀 Entrega Confiable</h3>
+            <p>
+                Cumplimos con los tiempos de producción y entrega.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="productos" class="mb-5">
+
+        <h2>Nuestros Productos</h2>
+
+        <ul class="list-group">
+            <li class="list-group-item">Manillas personalizadas para eventos</li>
+            <li class="list-group-item">Manillas promocionales para empresas</li>
+            <li class="list-group-item">Manillas para campañas publicitarias</li>
+            <li class="list-group-item">Manillas para equipos y comunidades</li>
+        </ul>
+
+    </section>
+
+    <section class="text-center mt-5">
+        <h2>Solicita tu Cotización</h2>
+
+        <p>
+            Cuéntanos tu idea y te ayudaremos a convertirla en una manilla
+            única para tu marca o evento.
+        </p>
+
+<a href="https://www.instagram.com/apolomanillas"
+   target="_blank"
+   class="btn btn-success btn-lg">
+    Contactar Ahora
+</a>
+    </section>
+
+</div>
